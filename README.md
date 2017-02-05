@@ -6,3 +6,4 @@ This is an android application for finding compatible roommates.
 # mirumi
 >>>>>>> 831b3f48204b366270a445c0a17cbb6121ad8a8e
 # mirumi
+# Mirumi
