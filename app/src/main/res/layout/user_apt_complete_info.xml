@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true"
+            android:fillViewport="true">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fafafa"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="248dp"
+                    android:elevation="10dp">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/aptimageslist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="248dp" />
+
+                    <TextView
+                        android:id="@+id/rent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="38dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/black_alpha_40"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text=" $  "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/apploizc_white_color"
+                        android:textStyle="bold" />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:hint="Looking for"
+                    android:paddingTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/btn_login"
+                    android:typeface="sans"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="20dp">
+
+
+                    <CheckedTextView
+                        android:id="@+id/vacancy"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:button="@drawable/roomie"
+                        android:drawableTop="@drawable/roomie"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:paddingRight="15dp"
+                        android:text="2 Roomies"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <CheckedTextView
+                        android:id="@+id/gender"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:button="@drawable/gender"
+                        android:drawableTop="@drawable/gender"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:paddingRight="15dp"
+                        android:text="Male or Female"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+
+
+
+                    <CheckedTextView
+                        android:id="@+id/age"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:button="@drawable/age"
+                        android:drawableTop="@drawable/age"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:paddingRight="15dp"
+                        android:text="17 - 32 Yrs"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:hint="About"
+                    android:paddingTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/btn_login"
+                    android:typeface="sans"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/apploizc_white_color"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:freezesText="true"
+                        android:paddingTop="5dp"
+                        android:singleLine="false"
+                        android:text="Sample"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:typeface="sans"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:hint="Amenities"
+                    android:paddingTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/btn_login"
+                    android:typeface="sans"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/apploizc_white_color"
+                    android:elevation="2dp"
+                    >
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true">
+
+                        <LinearLayout
+                            android:id="@+id/alayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:hint="Rules"
+                    android:paddingTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/btn_login"
+                    android:typeface="sans"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/apploizc_white_color"
+                    android:elevation="2dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/apploizc_white_color"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/rlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:orientation="horizontal">
+
+
+
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:freezesText="true"
+                    android:gravity="center"
+                    android:hint="Cost and Availability"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/background_floating_material_dark"
+                    android:textStyle="normal"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/apploizc_white_color"
+                    android:elevation="2dp"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="?android:attr/listDivider"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:hint="Utilities"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/dummyutilities"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignStart="@+id/utilities"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:foregroundGravity="left"
+                            android:gravity="center_vertical"
+                            android:text="$"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/utilities"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/apploizc_transparent_color"
+                            android:foregroundGravity="center"
+                            android:freezesText="true"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="?android:attr/listDivider"/>
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <TextView
+                            android:id="@+id/depositText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:hint="Deposit"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/dummydeposit"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignStart="@+id/deposit"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:foregroundGravity="left"
+                            android:gravity="center_vertical"
+                            android:text="$"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <EditText
+                            android:id="@+id/deposit"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/apploizc_transparent_color"
+                            android:digits="0123456789"
+                            android:foregroundGravity="center"
+                            android:freezesText="true"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="?android:attr/listDivider"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <TextView
+                            android:id="@+id/movindate_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:hint="Movin-Date"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <EditText
+                            android:id="@+id/movindate"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/apploizc_transparent_color"
+                            android:foregroundGravity="center"
+                            android:freezesText="true"
+                            android:gravity="center"
+                            android:inputType="date"
+                            android:text="Demo"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="?android:attr/listDivider"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <TextView
+                            android:id="@+id/placeTypeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:text="Place Type"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <EditText
+                            android:id="@+id/placetype"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/apploizc_transparent_color"
+                            android:foregroundGravity="center"
+                            android:freezesText="true"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:text="Demo"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="?android:attr/listDivider"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <TextView
+                            android:id="@+id/durationText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="20dp"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:text="Duration"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <EditText
+                            android:id="@+id/duration"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/apploizc_transparent_color"
+                            android:foregroundGravity="center"
+                            android:freezesText="true"
+                            android:gravity="center"
+                            android:inputType="date"
+                            android:text="Demo"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:hint="Location"
+                    android:paddingTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:typeface="sans"/>
+
+                <FrameLayout
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:elevation="5dp"
+                    android:paddingTop="5dp" />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_edit_apartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="25dp"
+        android:src="@drawable/edit_48"
+        android:tint="@color/apploizc_white_color"
+        app:layout_behavior="com.dbxlab.vijjub.mirumy.adapters.ScrollingFabBehaviour" />
+
+
+</android.support.design.widget.CoordinatorLayout>

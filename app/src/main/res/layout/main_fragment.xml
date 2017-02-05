@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@mipmap/edge"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/roomie"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/place"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/main_fragment_buttons"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Looking for a Roomie??"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/apploizc_white_color"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/place"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_fragment_buttons"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Looking for a Place??"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/apploizc_white_color"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/roomie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>

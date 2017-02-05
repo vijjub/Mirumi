@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:fadeScrollbars="true"
+    android:fillViewport="true">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+
+            <RelativeLayout
+                android:id="@+id/address_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_toStartOf="@+id/checkBox"
+                    android:text="Please Enter Address"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:typeface="sans" />
+
+                <RadioButton
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:paddingRight="20dp" />
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/apploizc_white_color"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="200" >
+
+                    <EditText
+                        android:id="@+id/desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tell us about your place!!!"
+                        android:typeface="sans"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:freezesText="true"
+                android:hint="Gender"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/btn_login"
+                android:typeface="sans"/>
+
+            <LinearLayout
+                android:id="@+id/genderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/apploizc_white_color"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+                <CheckedTextView
+                    android:id="@+id/checkboxMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ivGallery"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.42"
+                    android:button="@drawable/male"
+                    android:drawableTop="@drawable/male"
+                    android:singleLine="false"
+                    android:text="Male"
+                    android:textAlignment="center" />
+
+                <CheckedTextView
+                    android:id="@+id/checkboxFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.29"
+                    android:button="@drawable/female"
+                    android:drawableTop="@drawable/female"
+                    android:ellipsize="marquee"
+                    android:text="Female"
+                    android:textAlignment="center"/>
+
+                <CheckedTextView
+                    android:id="@+id/checkedBoxAny"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.15"
+                    android:button="@drawable/male_female"
+                    android:drawableTop="@drawable/male_female"
+                    android:ellipsize="marquee"
+                    android:text="Male or Female"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:freezesText="true"
+                android:gravity="center"
+                android:hint="Age Range"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/btn_login"
+                android:textStyle="normal"
+                android:typeface="sans"/>
+
+            <LinearLayout
+                android:id="@+id/seek_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/apploizc_white_color"
+                android:elevation="2dp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+
+            <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/rooms"-->
+            <!--android:freezesText="true"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:textColor="@color/btn_login"-->
+            <!--android:hint="Rooms"/>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:freezesText="true"
+                android:gravity="center"
+                android:hint="Rooms"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_floating_material_dark"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/date"
+                android:layout_weight="1"
+                android:background="@color/apploizc_white_color"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/minusRooms"
+                    android:layout_width="94dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_toStartOf="@+id/roomcount"
+                    android:background="@null"
+                    android:src="@drawable/minus" />
+                <!--android:tint="@color/apploizc_transparent_color"-->
+                <TextView
+                    android:id="@+id/roomcount"
+                    android:layout_width="193dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toStartOf="@+id/plusRooms"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageButton
+                    android:id="@+id/plusRooms"
+                    android:layout_width="77dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:background="@null"
+                    android:src="@drawable/plusgreen" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:freezesText="true"
+                android:gravity="center"
+                android:hint="Vacancy"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_floating_material_dark"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:id="@+id/vacancyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/date"
+                android:layout_weight="1"
+                android:background="@color/apploizc_white_color"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:id="@+id/minusVacancy"
+                    android:layout_width="94dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_toStartOf="@+id/vacancyCount"
+                    android:background="@null"
+                    android:src="@drawable/minus" />
+                <!--android:tint="@color/apploizc_transparent_color"-->
+
+
+                <TextView
+                    android:id="@+id/vacancyCount"
+                    android:layout_width="193dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toStartOf="@+id/plusVacancy"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageButton
+                    android:id="@+id/plusVacancy"
+                    android:layout_width="77dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:background="@null"
+                    android:src="@drawable/plusgreen" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:freezesText="true"
+                android:gravity="center"
+                android:hint="Cost and Availability"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_floating_material_dark"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/apploizc_white_color"
+                android:elevation="2dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:id="@+id/rentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:hint="Rent"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/dummyrent"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/rent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:foregroundGravity="left"
+                        android:gravity="center_vertical"
+                        android:text="$"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/gold" />
+
+                    <EditText
+                        android:id="@+id/rent"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/apploizc_transparent_color"
+                        android:digits="0123456789"
+                        android:foregroundGravity="center"
+                        android:freezesText="true"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:hint="Utilities"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/dummyutilities"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/utilities"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:foregroundGravity="left"
+                        android:gravity="center_vertical"
+                        android:text="$"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/gold" />
+
+                    <EditText
+                        android:id="@+id/utilities"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/apploizc_transparent_color"
+                        android:digits="0123456789"
+                        android:foregroundGravity="center"
+                        android:freezesText="true"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"/>
+
+
+
+                <!--<android.support.design.widget.TextInputEditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/utilities"-->
+                <!--android:freezesText="true"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:textColor="@color/btn_login"-->
+                <!--android:hint="utilies"/>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:id="@+id/depositText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:hint="Deposit"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/dummydeposit"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/deposit"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:foregroundGravity="left"
+                        android:gravity="center_vertical"
+                        android:text="$"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/gold" />
+
+                    <EditText
+                        android:id="@+id/deposit"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/apploizc_transparent_color"
+                        android:digits="0123456789"
+                        android:foregroundGravity="center"
+                        android:freezesText="true"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:id="@+id/movindate_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:hint="Movin-Date"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <EditText
+                        android:id="@+id/movindate"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/apploizc_transparent_color"
+                        android:foregroundGravity="center"
+                        android:freezesText="true"
+                        android:gravity="center"
+                        android:inputType="date"
+                        android:text="Select a Date"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:id="@+id/placeTypeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="Place Type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <EditText
+                        android:id="@+id/placetype"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/apploizc_transparent_color"
+                        android:foregroundGravity="center"
+                        android:freezesText="true"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:text="Select a Value"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:id="@+id/durationText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="Duration"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <EditText
+                        android:id="@+id/duration"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/apploizc_transparent_color"
+                        android:foregroundGravity="center"
+                        android:freezesText="true"
+                        android:gravity="center"
+                        android:inputType="date"
+                        android:text="Select a Value"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:id="@+id/occupanttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:text="I will be an Occupant"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <Switch
+                        android:id="@+id/occupantswitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="46dp"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:freezesText="true"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:id="@+id/duration"-->
+            <!--android:textColor="@color/btn_login"-->
+            <!--android:hint="Duration"-->
+            <!--android:layout_below="@+id/depositText"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:freezesText="true"
+                android:gravity="center"
+                android:hint="Amenities"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/btn_login"
+                android:textStyle="normal"
+                android:typeface="sans"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/apploizc_white_color"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/checkBox"
+                    android:stretchColumns="0,1,2"
+                    android:weightSum="6">
+
+                    <TableRow android:layout_weight="1"
+                        android:paddingBottom="10dp">
+
+                        <CheckedTextView
+                            android:id="@+id/checkbox_ac"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_ac"
+                            android:drawableTop="@drawable/checkbox_ac"
+                            android:ellipsize="marquee"
+                            android:text="Air Conditioner"
+                            android:textAlignment="center" />
+
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_heater"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_heater"
+                            android:drawableTop="@drawable/checkbox_heater"
+                            android:text="Heater"
+                            android:textAlignment="center" />
+
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_internet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ivGallery"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_internet"
+                            android:drawableTop="@drawable/checkbox_internet"
+                            android:text="Internet"
+                            android:textAlignment="center" />
+
+                        <CheckedTextView
+                            android:id="@+id/checkbox_wifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ivGallery"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_wifi"
+                            android:drawableTop="@drawable/checkbox_wifi"
+                            android:text="Wifi"
+                            android:textAlignment="center" />
+
+                    </TableRow>
+
+                    <TableRow android:layout_weight="1" android:paddingBottom="10dp">
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_pool"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_pool"
+                            android:drawableTop="@drawable/checkbox_pool"
+                            android:singleLine="false"
+                            android:text="Pool"
+                            android:textAlignment="center"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_gym"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_gym"
+                            android:drawableTop="@drawable/checkbox_gym"
+                            android:text="Gym"
+                            android:textAlignment="center" />
+
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_kitchen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ivGallery"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_kitchen"
+                            android:drawableTop="@drawable/checkbox_kitchen"
+                            android:text="Kitchen"
+                            android:textAlignment="center" />
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_closet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ivGallery"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_closet"
+                            android:drawableTop="@drawable/checkbox_closet"
+                            android:text="Closet"
+                            android:textAlignment="center" />
+                    </TableRow>
+
+                    <TableRow android:layout_weight="1" >
+
+                        <CheckedTextView
+                            android:id="@+id/checkbox_washer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_washer"
+                            android:drawableTop="@drawable/checkbox_washer"
+                            android:text="Washer"
+                            android:textAlignment="center" />
+
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_dryer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ivGallery"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_dryer"
+                            android:drawableTop="@drawable/checkbox_dryer"
+                            android:text="Dryer"
+                            android:textAlignment="center" />
+
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_furnished"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ivGallery"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_furnished"
+                            android:drawableTop="@drawable/checkbox_furnished"
+                            android:text="Furnished"
+                            android:textAlignment="center" />
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_pets"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ivGallery"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_pets"
+                            android:drawableTop="@drawable/checkbox_pets"
+                            android:singleLine="false"
+                            android:text="Pets Live Here"
+                            android:textAlignment="center" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:freezesText="true"
+                android:gravity="center"
+                android:hint="Rules"
+                android:paddingTop="10dp"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/background_floating_material_dark"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/apploizc_white_color"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/checkBox"
+                    android:stretchColumns="0,1,2,3"
+                    android:weightSum="6">
+
+                    <TableRow android:layout_weight="1" android:paddingBottom="10dp" >
+
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_drugs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_drugs"
+                            android:drawableTop="@drawable/checkbox_drugs"
+                            android:text="Drugs"
+                            android:textAlignment="center" />
+
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_music"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_music"
+                            android:drawableTop="@drawable/checkbox_music"
+                            android:text="Loud Music"
+                            android:textAlignment="center" />
+
+                        <CheckedTextView
+                            android:id="@+id/checkbox_guests"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_guests"
+                            android:drawableTop="@drawable/checkbox_guests"
+                            android:text="Guests"
+                            android:textAlignment="center" />
+
+                    </TableRow>
+
+                    <TableRow android:layout_weight="1" >
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_late_nights"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_late_nights"
+                            android:drawableTop="@drawable/checkbox_late_nights"
+                            android:singleLine="false"
+                            android:text="Late Nights"
+                            android:textAlignment="center"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                        <CheckedTextView
+                            android:id="@+id/checkBox_pets_allowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ivGallery"
+                            android:layout_centerHorizontal="true"
+                            android:button="@drawable/checkbox_pets"
+                            android:drawableTop="@drawable/checkbox_pets"
+                            android:singleLine="false"
+                            android:text="Pets Allowed"
+                            android:textAlignment="center" />
+
+                        <CheckedTextView
+                            android:id="@+id/checkbox_smoking"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_column="2"
+                            android:button="@drawable/checkbox_smoking"
+                            android:drawableTop="@drawable/checkbox_smoking"
+                            android:ellipsize="marquee"
+                            android:text="No Smoking"
+                            android:textAlignment="center" />
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

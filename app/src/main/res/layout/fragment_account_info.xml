@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways|snap" />-->
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:fadeScrollbars="false"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@mipmap/poly10"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/men"
+                        android:layout_marginTop="38dp"
+                        android:id="@+id/profileimage"
+                        app:civ_border_color="@color/apploizc_white_color"
+                        app:civ_border_width="2dp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Name"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/fullname"
+                    android:paddingTop="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center"
+                    android:hint="Email Address"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/email"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Joined"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/joined"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Age"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:gravity="center"
+                    android:id="@+id/age"
+                    android:paddingTop="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Gender"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/gender"
+                    android:paddingTop="10dp" />
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:hint="COST"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textColor="@color/btn_login"-->
+                <!--android:id="@+id/ucost"-->
+                <!--android:paddingTop="10dp" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Cooking"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/cooking"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Food Prefernce"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/food_pref"
+                    android:paddingTop="10dp" />
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:hint="Roomie"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textColor="@color/btn_login"-->
+                <!--android:id="@+id/roomie"-->
+                <!--android:paddingTop="10dp" />-->
+
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:hint="Other Roomie"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textColor="@color/btn_login"-->
+                <!--android:id="@+id/otherroomie"-->
+                <!--android:paddingTop="10dp" />-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:hint="Duration"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textColor="@color/btn_login"-->
+                <!--android:id="@+id/duration"-->
+                <!--android:paddingTop="10dp" />-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:hint="Movin Date"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textColor="@color/btn_login"-->
+                <!--android:id="@+id/movin"-->
+                <!--android:paddingTop="10dp" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="clean"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/clean"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Smoking"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/smoking"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Alcohol"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/alcohol"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Socilaize"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/social"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Noise"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/noise"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Pets"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/upets"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:hint="Sleep"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/btn_login"
+                    android:id="@+id/sleep"
+                    android:paddingTop="10dp" />
+
+
+
+
+                <!--<android.support.design.widget.FloatingActionButton-->
+                    <!--android:src="@drawable/edit_48"-->
+                    <!--android:id="@+id/button_edit_user"-->
+                    <!--android:background="@color/colorPrimaryDark"-->
+                    <!--android:tint="@color/apploizc_white_color"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_gravity="bottom|end"-->
+                    <!--android:layout_marginLeft="16dp"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:elevation="25dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_alignParentEnd="true" />-->
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/edit_48"
+        android:id="@+id/button_edit_user"
+        app:layout_behavior="com.dbxlab.vijjub.mirumy.adapters.ScrollingFabBehaviour"
+        android:background="@color/colorPrimaryDark"
+        android:tint="@color/apploizc_white_color"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:elevation="25dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:fillViewport="true"-->
+    <!--android:fadeScrollbars="false"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:background="@mipmap/poly10"-->
+        <!--android:orientation="vertical">-->
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/men"-->
+            <!--android:layout_marginTop="38dp"-->
+            <!--android:id="@+id/profileimage"-->
+            <!--app:civ_border_color="@color/apploizc_white_color"-->
+            <!--app:civ_border_width="2dp"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Name"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/fullname"-->
+        <!--android:paddingTop="10dp" />-->
+
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="Email Address"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/email"-->
+        <!--android:paddingTop="10dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Joined"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/joined"-->
+        <!--android:paddingTop="10dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Age"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/age"-->
+        <!--android:paddingTop="10dp" />-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Gender"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/gender"-->
+        <!--android:paddingTop="10dp" />-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAppearance="?android:attr/textAppearanceMedium"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:hint="COST"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/btn_login"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/ucost"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingTop="10dp" />&ndash;&gt;-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Cooking"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/cooking"-->
+        <!--android:paddingTop="10dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Food Prefernce"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/food_pref"-->
+        <!--android:paddingTop="10dp" />-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAppearance="?android:attr/textAppearanceMedium"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:hint="Roomie"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/btn_login"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/roomie"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingTop="10dp" />&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAppearance="?android:attr/textAppearanceMedium"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:hint="Other Roomie"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/btn_login"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/otherroomie"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingTop="10dp" />&ndash;&gt;-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAppearance="?android:attr/textAppearanceMedium"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:hint="Duration"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/btn_login"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/duration"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingTop="10dp" />&ndash;&gt;-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAppearance="?android:attr/textAppearanceMedium"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:hint="Movin Date"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/btn_login"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/movin"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingTop="10dp" />&ndash;&gt;-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="clean"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/clean"-->
+        <!--android:paddingTop="10dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Smoking"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/smoking"-->
+        <!--android:paddingTop="10dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Alcohol"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/alcohol"-->
+        <!--android:paddingTop="10dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Socilaize"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/social"-->
+        <!--android:paddingTop="10dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Noise"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/noise"-->
+        <!--android:paddingTop="10dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Pets"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/upets"-->
+        <!--android:paddingTop="10dp" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:hint="Sleep"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:textColor="@color/btn_login"-->
+        <!--android:id="@+id/sleep"-->
+        <!--android:paddingTop="10dp" />-->
+
+
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:src="@drawable/edit_48"-->
+        <!--android:id="@+id/button_edit_user"-->
+        <!--android:background="@color/colorPrimaryDark"-->
+        <!--android:tint="@color/apploizc_white_color"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:elevation="25dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
+
+
+
+<!--</LinearLayout>-->
+    <!--</ScrollView>-->
+    <!--</LinearLayout>-->

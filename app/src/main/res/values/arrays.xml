@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="placetype">
+        <item>Apartment</item>
+        <item>Independent home</item>
+        <item>Dormitory</item>
+    </string-array>
+
+    <string-array name="duration_list">
+        <item>Less than 1 Month</item>
+        <item>Less than 3 months</item>
+        <item>6 to 9 Months</item>
+        <item>more than a Year</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Male or Female</item>
+    </string-array>
+
+
+
+    <string-array name="foodPreference">
+        <item>Vegan</item>
+        <item>Vegetarian</item>
+        <item>Non-Vegetarian</item>
+        <item>Pescitarian</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="cleanliness">
+        <item>Obsessed with Neatness</item>
+        <item>Moderately Clean</item>
+        <item>I don\'t care</item>
+    </string-array>
+
+    <string-array name="sleep">
+        <item>Morning Person</item>
+        <item>Night Owl</item>
+        <item>No Specific Sleep Cycle</item>
+    </string-array>
+
+
+</resources>

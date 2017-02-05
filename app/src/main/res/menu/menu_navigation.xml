@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/account_settings"
+        android:icon="@drawable/gender_neutral_user"
+        android:tint="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:title="My Account"/>
+
+    <item android:title="Looking for a Place">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/aptsearch"
+                    android:icon="@drawable/building"
+                    android:tint="@color/colorPrimaryDark"
+                    android:title="Browse Listings" />
+
+                <item
+                    android:id="@+id/roomiesetting"
+                    android:icon="@drawable/roomie_setting"
+                    android:tint="@color/colorPrimaryDark"
+                    android:title="Roomie Settings" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Looking for a Roommate??!">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/roomiesearch"
+                    android:icon="@drawable/carpet_man_large"
+                    android:tint="@color/colorPrimaryDark"
+                    android:title="Find Roommates" />
+
+                <item
+                    android:id="@+id/myaptdetails"
+                    android:icon="@drawable/home"
+                    android:tint="@color/colorPrimaryDark"
+                    android:title="My Apartments" />
+
+                <item
+                    android:id="@+id/addnewapt"
+                    android:icon="@drawable/plus"
+                    android:tint="@color/colorPrimaryDark"
+                    android:title="Add new Aprtment" />
+
+            </group>
+        </menu>
+    </item>
+
+    <group android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/message"
+            android:icon="@drawable/speech_bubble"
+            android:tint="@color/colorPrimaryDark"
+            android:title="Inbox" />
+
+
+        <item
+            android:id="@+id/appsettings"
+            android:icon="@drawable/settings_3"
+            android:tint="@color/colorPrimaryDark"
+            android:title="App Settings" />
+
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/help"
+            android:tint="@color/colorPrimaryDark"
+            android:title="Help" />
+
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/paper_plane_large"
+            android:tint="@color/colorPrimaryDark"
+            android:title="Feedback" />
+
+
+        <item
+            android:id="@+id/three"
+            android:icon="@drawable/shutdown"
+            android:tint="@color/colorPrimaryDark"
+            android:title="Logout" />
+
+    </group>
+    </group>
+
+
+
+
+
+</menu>

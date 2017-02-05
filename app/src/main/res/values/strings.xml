@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">mirumi</string>
+
+        <string name="action_settings">Settings</string>
+        <string name="hint_email">Email</string>
+        <string name="hint_username">Username</string>
+        <string name="hint_password">Password</string>
+        <string name="hint_cpassword">Confirm Password</string>
+        <string name="hint_fname">FIRST Name</string>
+        <string name="hint_lname">Last Name</string>
+        <string name="btn_login">LOGIN</string>
+        <string name="btn_register">REGISTER</string>
+        <string name="btn_link_to_register">New User? Sign up....</string>
+        <string name="btn_link_to_login">Already registered! Login....</string>
+        <string name="welcome">Welcome</string>
+        <string name="btn_logout">LOGOUT</string>
+        <string name="name">Name</string>
+        <string name="fill_vacancy">Yeah! Find me a roommate</string>
+        <string name="find_team">Find me people to take a Lease</string>
+        <string name="find_room">Yeah! Find me a place</string>
+        <string name="hint_major">Major</string>
+        <string name="hint_plan">Course Plan</string>
+        <string name="btn_submit">Submit</string>
+        <string name="cp">Choose a Type</string>
+        <string name="drawer_open">Open navigation drawer</string>
+        <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="default_media_location_folder">MiRumy</string>
+    <string name="application_key">applozic-sample-app</string>
+
+
+
+
+    <string name="title_activity_illustrator_map">Map</string>
+        <string name="title_activity_map_find_room">Map</string>
+<string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]>
+    </string>
+    <string name="duration_text">Please select an option</string>
+    <string name="gender_text">Gender</string>
+    <string name="food_text1">Food Preferences</string>
+    <string name="cleanText">Cleanliness</string>
+    <string name="placetype_text">Please select an Option</string>
+    <string name="permission_camera_rationale">Permission required to access Camera and Gallery</string>
+    <string name="permission_camera_denied">Camera permission has been denied</string>
+    <string name="permission_camera_never_askagain">Camera permission will not be asked again</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+
+</resources>
